@@ -1,30 +1,56 @@
 :root {
-    --White: rgba(255, 255, 255, 1);
-    --Black: rgba(0, 0, 0, 1);
-    --Blue: rgba(0, 0, 255, 1);
-    --Magenta: rgba(255, 0, 255, 1);
-  }
-  
-  body {
-    background: var(--White);
-    color: var(--White);
-    font-size: 20px;
-    font-family: 'Syne', sans-serif;
-    padding: 50px;
-  }
+  --White: rgba(255, 255, 255, 1);
+  --Black: rgba(0, 0, 0, 1);
+  --Blue: rgba(0, 0, 255, 1);
+  --Magenta: rgba(255, 0, 255, 1);
+}
 
-  .pokedexintro {
-    border-bottom: 3px solid var(--White);
-  }
+body {
+  background: var(--Blue);
+  color: var(--White);
+  font-size: 20px;
+  font-family: 'Syne', sans-serif;
+  padding: 50px;
+}
 
-  .pokedex {
-    padding-top: 20px;
-  }
+.pokedexintro {
+  border-bottom: 3px solid var(--White);
+}
 
-  .pbox {
-    background-color: var(--Blue);
-    padding: 50px;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+.pokedex {
+  padding-top: 20px;
+}
+
+.pbox {
+  padding: 50px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Pokemon List styling */
+.pokemon-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pokemon-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button-class {
+  background-color: var(--White);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  text-transform: uppercase;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.button-class:hover,
+.button-class:focus {
+  background-color: var(--Magenta);
+}
