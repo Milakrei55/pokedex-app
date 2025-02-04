@@ -11,6 +11,7 @@ body {
   font-size: 20px;
   font-family: 'Syne', sans-serif;
   padding: 50px;
+  image-rendering: pixelated;
 }
 
 .pokedexintro {
@@ -53,4 +54,59 @@ body {
 .button-class:hover,
 .button-class:focus {
   background-color: var(--Magenta);
+}
+
+/* Pokemon Modal popup styling */
+
+#modal-container {
+  position: fixed;
+  overflow: hidden; 
+  display: grid;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--Black);
+  padding: 50px;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.modal-close {
+  float: right;
+  border: 0;
+  background: none;
+  color: var(--White);
+  text-decoration: underline;
+}
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
+#modal-container {
+  display: none;
+}
+
+/* Styling for modal */
+#modal-container.is-visible {
+  left: 30%;
+  top: 30%;
+  box-sizing: border-box;
+  width: 40%;
+  height: 50%;
+  z-index: 999;
+  overflow: auto;
+  display:grid;
+  text-align: center;
 }
