@@ -7,106 +7,46 @@
 
 body {
   background: var(--Blue);
-  color: var(--White);
   font-size: 20px;
   font-family: 'Syne', sans-serif;
   padding: 50px;
   image-rendering: pixelated;
 }
 
-.pokedexintro {
-  border-bottom: 3px solid var(--White);
-}
-
-.pokedex {
-  padding-top: 20px;
-}
-
-.pbox {
-  padding: 50px;
-  align-items: center;
-  margin: 0 auto;
-}
-
-/* Pokemon List styling */
-.pokemon-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.pokemon-list li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.button-class {
-  background-color: var(--White);
+.btn-primary {
+  background-color: var(--Blue);
   border: none;
   border-radius: 30px;
-  padding: 20px;
+  padding: 16px 32px;
   text-align: center;
-  width: 250px;
-  text-transform: uppercase;
-  margin: 20px auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
-.button-class:hover,
-.button-class:focus {
-  background-color: var(--Magenta);
-}
-
-/* Pokemon Modal popup styling */
-
-#modal-container {
-  position: fixed;
-  overflow: hidden; 
-  display: grid;
-  text-align: center;
-  border-radius: 30px;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  overflow: hidden;
-  background: var(--Black);
-  padding: 50px;
-  width: 100%;
-  max-width: 800px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  border: 0;
-  background: none;
-  color: var(--White);
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-#modal-container {
-  display: none;
-}
-
-/* Styling for modal */
-#modal-container.is-visible {
-  left: 30%;
-  top: 30%;
-  box-sizing: border-box;
-  width: 40%;
-  height: 50%;
-  z-index: 999;
-  overflow: auto;
-  display:grid;
-  text-align: center;
-}
+/* Animation */
+@-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: -100;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: -100;
+      opacity: 1;
+    }
+  }
